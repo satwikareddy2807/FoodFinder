@@ -13,12 +13,14 @@ body{
 
 /* Header */
 header{
-    background-color:#4E342E;
+    background:#4E342E;
     color:white;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
+    flex-wrap:wrap;
+    gap:15px;
+    padding:20px 30px;
 }
 
 /* Logo */
@@ -28,10 +30,16 @@ header h1{
 
 /* Navigation */
 
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
 nav a{
     color:white;
     text-decoration:none;
-    margin-left:25px;
+    margin:10px;
     font-size:18px;
     font-weight:bold;
 }
@@ -141,8 +149,10 @@ button:hover{
 
 .search-section input{
 
-    width:350px;
-
+    width:100%;
+    
+    max-width:400px;
+    
     padding:15px;
 
     border-radius:10px;
@@ -166,15 +176,17 @@ button:hover{
     margin-bottom:15px;
 }
 .restaurant-page{
-    width:80%;
+    width:95%;
+    max-width:1200px;
     margin:auto;
     padding:40px;
     text-align:center;
 }
 
 .restaurant-image{
-    width:500px;
-    height:300px;
+    width:100%;
+    max-width:650px;
+    height:auto;
     object-fit:cover;
     border-radius:15px;
     box-shadow:0 5px 20px rgba(0,0,0,.3);
@@ -192,8 +204,11 @@ button:hover{
 }
 
 .menu-table{
+    width:100%;
+    overflow-x:auto;
+    display:block;
+    max-width:850px;
     margin:auto;
-    width:60%;
     border-collapse:collapse;
 }
 
@@ -212,30 +227,22 @@ button:hover{
     background:white;
     margin:20px auto;
     padding:20px;
-    width:70%;
+    width:100%;
+    max-width:700px;
     border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 .reservation-form{
-
-width:60%;
-
-margin:auto;
-
-display:flex;
-
-flex-direction:column;
-
-gap:15px;
-
-padding:30px;
-
-background:white;
-
-border-radius:15px;
-
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-
+    width:100%;
+    max-width:700px;
+    margin:30px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:25px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 .reservation-form input,
@@ -309,7 +316,8 @@ text-align:left;
 }
 
 .review-card{
-    width:280px;
+    width:100%;
+    max-width:300px;
     background:white;
     padding:25px;
     border-radius:15px;
@@ -344,59 +352,73 @@ footer{
     margin-top:50px;
     font-size:18px;
 }
-/* Mobile Responsive */
+.review-card h4{
+    margin-top:15px;
+    color:#ff6b45;
+}
+
+footer{
+    background:#5d4037;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+    font-size:18px;
+}
+
+/* Add the responsive code BELOW the footer */
+
 @media (max-width:768px){
 
-    .restaurant-page{
-        width:95%;
-        padding:15px;
-    }
+header{
+flex-direction:column;
+text-align:center;
+}
 
-    .restaurant-image{
-        width:100%;
-        height:auto;
-    }
+nav{
+flex-direction:column;
+}
 
-    .menu-table{
-        width:100%;
-        font-size:16px;
-    }
+.search-section input,
+.search-section button{
+width:100%;
+margin:10px 0;
+}
 
-    .reservation-form{
-        width:100%;
-        padding:20px;
-    }
+.restaurant-page{
+padding:15px;
+}
 
-    .reservation-form input,
-    .reservation-form select,
-    .reservation-form textarea{
-        width:100%;
-        font-size:16px;
-    }
+.card{
+width:100%;
+}
 
-    .reserve-btn{
-        width:100%;
-    }
+.review-card{
+max-width:100%;
+}
 
-    .review-container{
-        flex-direction:column;
-        align-items:center;
-    }
+button{
+width:100%;
+}
 
-    .review-card{
-        width:100%;
-    }
+}
 
-    .description{
-        font-size:18px;
-    }
+@media (max-width:480px){
 
-    h1{
-        font-size:35px;
-    }
+section h2{
+font-size:30px;
+}
 
-    h2{
-        font-size:28px;
-    }
+section p{
+font-size:16px;
+}
+
+header h1{
+font-size:24px;
+}
+
+.restaurant-image{
+max-width:100%;
+}
 
 }
