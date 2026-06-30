@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FoodFinder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1>🍽️ FoodFinder</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Restaurants</a>
+            <a href="#">Reviews</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- Hero Section -->
+    <section>
+
+        <h2>Find the Best Restaurants Near You</h2>
+
+        <p>
+            Discover amazing restaurants, explore menus,
+            reserve your table, and enjoy delicious food.
+        </p>
+
+        <button>Explore Restaurants</button>
+
+    </section>
+<!-- Featured Restaurants -->
+
+<section class="restaurants">
+
+    <h2>Featured Restaurants</h2>
+
+    <div class="restaurant-container">
+
+        <div class="card">
+            <img src="image/pizza.jpeg" alt="Pizza Palace">
+            <h3>🍕 Pizza Palace</h3>
+            <p>Italian Cuisine</p>
+            <p>⭐⭐⭐⭐⭐</p>
+
+            <a href="pizza.html">
+    <a href="pizza.html" class="btn">View Details</a>
+</a>
+        </div>
+
+        <div class="card">
+            <img src="image/burger.jpeg" alt="Burger House">
+            <h3>🍔 Burger House</h3>
+            <p>American Cuisine</p>
+            <p>⭐⭐⭐⭐☆</p>
+
+            <a href="burger.html" class="btn">View Details</a>
+        </div>
+
+        <div class="card">
+            <img src="image/indian.jpeg" alt="Spice Garden">
+            <h3>🍜 Spice Garden</h3>
+            <p>Indian Cuisine</p>
+            <p>⭐⭐⭐⭐⭐</p>
+
+            <a href="indian.html" class="btn">View Details</a>
+        </div>
+
+    </div>
+
+</section>
+<!-- Search Section -->
+
+<section class="search-section">
+
+    <h2>Search Restaurants</h2>
+
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search by restaurant name...">
+
+<button onclick="searchRestaurant()">
+    Search
+</button>
+
+</section>
+</body>
+
+<script src="script.js"></script>
+
+</html>
