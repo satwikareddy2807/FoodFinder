@@ -344,3 +344,59 @@ footer{
     margin-top:50px;
     font-size:18px;
 }
+/* Mobile Responsive */
+@media (max-width:768px){
+
+    .restaurant-page{
+        width:95%;
+        padding:15px;
+    }
+
+    .restaurant-image{
+        width:100%;
+        height:auto;
+    }
+
+    .menu-table{
+        width:100%;
+        font-size:16px;
+    }
+
+    .reservation-form{
+        width:100%;
+        padding:20px;
+    }
+
+    .reservation-form input,
+    .reservation-form select,
+    .reservation-form textarea{
+        width:100%;
+        font-size:16px;
+    }
+
+    .reserve-btn{
+        width:100%;
+    }
+
+    .review-container{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .review-card{
+        width:100%;
+    }
+
+    .description{
+        font-size:18px;
+    }
+
+    h1{
+        font-size:35px;
+    }
+
+    h2{
+        font-size:28px;
+    }
+
+}
